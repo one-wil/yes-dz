@@ -3,14 +3,55 @@
 // ⚙️ ملف الإعدادات الرئيسي للمتجر
 // =============================================================================
 
-const STOREMASTER_LICENSE = {
-    storeId: "__STOREMASTER_STORE_ID__",
-    token: "__STOREMASTER_TOKEN__"
-};
-
 const STORE_CONFIG = {
-  "PRODUCTS": {},
-  "PRODUCT_ORDER": {},
+  "PRODUCTS": {
+    "1788996734051": {
+      "name": "Ensemble POLO",
+      "price": 2400,
+      "description": "",
+      "category": "",
+      "stock": 0,
+      "featured": false,
+      "availableColors": [
+        "Gray-black"
+      ],
+      "availableSizes": [
+        "S"
+      ],
+      "ageRanges": [],
+      "colorImages": {
+        "Gray-black": {
+          "images": [
+            "https://raw.githubusercontent.com/one-wil/yes-dz/main/images/product-1788996734051-Gray-black-1788996799050-Messenger-creation-25516B0A-A522-42F1-9AB6-57299C553605.jpeg"
+          ],
+          "ageRanges": [
+            {
+              "ageFrom": " ",
+              "ageTo": " ",
+              "size": "S"
+            }
+          ]
+        }
+      },
+      "sizeGuide": {
+        "enabled": true,
+        "guide": {
+          "S": {
+            "heightFrom": 150,
+            "heightTo": 160,
+            "weightFrom": 60,
+            "weightTo": 70
+          }
+        }
+      },
+      "createdAt": "2026-09-09T23:32:14.051Z",
+      "image": "https://raw.githubusercontent.com/one-wil/yes-dz/main/images/product-1788996734051-1788996763798-Messenger-creation-25516B0A-A522-42F1-9AB6-57299C553605.jpeg",
+      "updatedAt": "2026-09-09T23:32:59.029Z"
+    }
+  },
+  "PRODUCT_ORDER": {
+    "1788996734051": 1
+  },
   "DELIVERY_PRICES": {
     "01 - أدرار": {
       "home": 1100,
@@ -247,7 +288,7 @@ const STORE_CONFIG = {
   },
   "FREE_DELIVERY": {
     "desk": {
-      "enabled": false,
+      "enabled": true,
       "minAmount": 0,
       "wilayas": [],
       "minQuantity": 1
@@ -261,7 +302,8 @@ const STORE_CONFIG = {
     "freeDeliveryProducts": [
       1765137505304,
       1765145035052,
-      1765145814607
+      1765145814607,
+      1788996734051
     ]
   },
   "DISCOUNTS": {
@@ -277,7 +319,7 @@ const STORE_CONFIG = {
     "promoDiscountProducts": []
   },
   "STORE_INFO": {
-    "name": "",
+    "name": "Yes-dz",
     "storeIcon": "-",
     "storeTitle": "-",
     "tagline": "",
@@ -1234,7 +1276,8 @@ const STORE_CONFIG = {
     "مسك",
     "عنبر"
   ],
-  "ORDERS": []
+  "ORDERS": [],
+  "LICENSE_SERVER": "https://storemaster-worker.vivavoir150.workers.dev"
 };
 
 // =============================================================================
