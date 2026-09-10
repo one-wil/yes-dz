@@ -1,0 +1,12 @@
+function setupOrdersApiSecret() {
+  const secret = 'SM-ORDERS-2026-X7K9-P4M2';
+
+  PropertiesService
+    .getScriptProperties()
+    .setProperty(
+      'ORDERS_API_SECRET',
+      secret
+    );
+
+  Logger.log('ORDERS_API_SECRET تم حفظه بنجاح');
+}
